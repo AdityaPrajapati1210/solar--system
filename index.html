@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(https://c1.wallpaperflare.com/preview/668/126/364/universe-the-background-image-space-galaxy.jpg);
+            background-size: cover;
+            
+            overflow: hidden;
+            margin: 0;
+        }
+        .solar-system {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+        }
+        .sun {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background-image: radial-gradient(orange,yellow);
+            border-radius: 50%;
+            box-shadow: 0 0 50px yellow;
+        }
+        .planet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+        }
+        .planet1 {
+            animation: orbit1 10s linear infinite;
+            background-image: url(./mercury.png);
+            background-size: contain;
+
+        }
+        .planet2 {
+            animation: orbit2 15s linear infinite;
+            background-image: url(./pluto.png);
+            background-size: contain;
+        }
+        .planet3 {
+            animation: orbit3 20s linear infinite;
+            background-image:url(./earth.png) ;
+            background-size: contain;
+
+        }
+        .planet4 {
+            animation: orbit4 25s linear infinite;
+            background-image: url(./jupiter.png);
+            background-size: contain;
+        }
+        .planet5 {
+            animation: orbit5 40s linear infinite;
+            background-image: url(./saturn.png);
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+        .planet6 {
+            animation: orbit6 70s linear infinite;
+            background-image: url(./pluto.png);
+            background-size: contain;
+           
+        }
+        .planet7 {
+            animation: orbit7 150s linear infinite;
+        
+            background-image: url(./venus.png);
+            background-size: contain;
+        }
+        @keyframes orbit1 {
+            from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+        }
+        @keyframes orbit2 {
+            from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+        }
+        @keyframes orbit3 {
+            from { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+        }
+        @keyframes orbit4 {
+            from { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+        }
+        @keyframes orbit5 {
+            from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+        }
+        @keyframes orbit6 {
+            from { transform: rotate(0deg) translateX(350px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(350px) rotate(-360deg); }
+        }
+        @keyframes orbit7 {
+            from { transform: rotate(0deg) translateX(400px) rotate(0deg); }
+            to { transform: rotate(360deg) translateX(400px) rotate(-360deg); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit" style="width: 200px; height: 200px;">
+            <div class="planet planet1"></div>
+        </div>
+        <div class="orbit" style="width: 300px; height: 300px;">
+            <div class="planet planet2" style="height: 30px; width: 30px;"></div>
+        </div>
+        <div class="sun"></div>
+        <div class="orbit" style="width: 400px; height: 400px;">
+            <div class="planet planet3" style="height: 30px; width: 30px; "></div>
+        </div>
+        <div class="orbit" style="width: 500px; height: 500px;">
+            <div class="planet planet4"  style="height: 70px; width: 70px;"></div>
+        </div>
+        <div class="sun"></div>
+        <div class="orbit" style="width: 600px; height: 600px;">
+            <div class="planet planet5" style="height: 90px;width: 90px;"></div>
+        </div>
+        <div class="orbit" style="width: 700px; height: 700px;">
+            <div class="planet planet6" style="height: 40px; width: 40px;"></div>
+        </div>
+        <div class="sun"></div>
+        <div class="orbit" style="width: 800px; height: 800px;">``
+            <div class="planet planet7" style="height: 40px; width: 40px;"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
